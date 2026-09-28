@@ -1,0 +1,39 @@
+{
+  "drive": {
+    "method": "POST",
+    "url": "/api/drives",
+    "body": {
+      "name": "College Green Drive",
+      "location": "SECE Campus",
+      "date": "2026-09-28"
+    }
+  },
+  "volunteer": {
+    "method": "POST",
+    "url": "/api/volunteers",
+    "body": {
+      "name": "Arun",
+      "email": "arun@example.com"
+    }
+  },
+  "tree": {
+    "method": "POST",
+    "url": "/api/trees",
+    "body": {
+      "species": "Neem",
+      "datePlanted": "2026-09-28",
+      "drive": { "id": 1 },
+      "plantedBy": { "id": 1 }
+    }
+  },
+  "checkin": {
+    "method": "POST",
+    "url": "/api/checkins",
+    "body": {
+      "checkInDate": "2026-10-28",
+      "alive": true,
+      "tree": { "id": 1 },
+      "volunteer": { "id": 1 }
+    }
+  }
+}
